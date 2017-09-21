@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NouveauPret"></activity>
+        <activity android:name=".NouveauPret" />
+        <activity android:name=".ChoisirMateriel"></activity>
     </application>
 
 </manifest>
