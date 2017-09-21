@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".NouveauPret" />
-        <activity android:name=".ChoisirMateriel"></activity>
+        <activity android:name=".ChoisirMateriel" />
+        <activity android:name=".Mes_Demandes" />
+        <activity android:name=".Affichage_Demande"></activity>
     </application>
 
 </manifest>
