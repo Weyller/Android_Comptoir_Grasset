@@ -21,11 +21,10 @@ android:background="@drawable/button_bg_rounded_corners"
         android:id="@+id/btMesPrets"
         android:layout_width="@dimen/large_button_width"
         android:layout_height="@dimen/large_button_height"
-        android:layout_below="@+id/btNouvPret"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/button_bg_rounded_corners"
         android:textSize="@dimen/tx_size20"
-        android:layout_marginTop="28dp"
-        android:text="Mes Prêts" />
+        android:text="Mes Prêts"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btNouvPret" />
 
 </RelativeLayout>
