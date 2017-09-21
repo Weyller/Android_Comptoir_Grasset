@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button nouveauPret;
+    Button btnNouveauPret, btnMesPrets;
 
 
     @Override
@@ -18,9 +18,21 @@ public class MainActivity extends AppCompatActivity {
 
         setTitle("IG Pret");
 
-        nouveauPret = (Button)findViewById(R.id.btNouvPret);
+        btnNouveauPret = (Button)findViewById(R.id.btNouvPret);
 
-        nouveauPret.setOnClickListener(new View.OnClickListener(){
+        btnMesPrets = (Button)findViewById(R.id.btMesPrets);
+
+        btnMesPrets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Mes_Demandes.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        btnNouveauPret.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {

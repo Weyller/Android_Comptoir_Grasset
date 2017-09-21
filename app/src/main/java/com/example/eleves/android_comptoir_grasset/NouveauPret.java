@@ -9,7 +9,7 @@ import android.widget.Button;
 public class NouveauPret extends AppCompatActivity {
 
 
-    Button btn_choix_materiel;
+    Button btn_choix_materiel, btn_annuler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,24 @@ public class NouveauPret extends AppCompatActivity {
         setTitle("IG Pret");
 
         btn_choix_materiel = (Button)findViewById(R.id.btn_choix_materiel);
+
+        btn_annuler = (Button)findViewById(R.id.btn_annuler);
+
+
+        btn_annuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(NouveauPret.this, MainActivity.class);
+
+                startActivity(intent);
+
+            }
+        });
+
+
+
+
 
         btn_choix_materiel.setOnClickListener(new View.OnClickListener() {
             @Override
